@@ -1,0 +1,25 @@
+
+<script>
+function openForm(plan) {
+  document.getElementById('form').style.display = 'block';
+  document.getElementById('selectedPlan').innerText = 'Selected Plan: ' + plan + ' Membership';
+  document.getElementById('planInput').value = plan;
+}
+
+document.getElementById('membershipForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.querySelector("input[placeholder='Full Name']").value;
+  const phone = document.querySelector("input[placeholder='Mobile Number']").value;
+  const place = document.querySelector("input[placeholder='Village / City']").value;
+  const plan = document.getElementById('planInput').value;
+  const req = document.querySelector("textarea").value || 'Not specified';
+
+  const message = `Hello BhooNidhi,%0A%0AI would like to become a *${plan} Member*.%0A%0A*Name:* ${name}%0A*Mobile:* ${phone}%0A*Location:* ${place}%0A*Requirements:* ${req}`;
+
+  const whatsappURL = `https://wa.me/917892761297?text=${message}`;
+  window.open(whatsappURL, '_blank');
+});
+  alert('Thank you! Our team will contact you shortly.');
+});
+</script>
