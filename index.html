@@ -1969,6 +1969,71 @@ nav {
   }
 }
 
+/* ===================================================
+   🔥 FINAL iPHONE FIX – FORCE ANDROID STYLE LAYOUT
+   =================================================== */
+
+@media screen and (max-width: 768px) {
+
+  /* Remove square constraint */
+  .bn-canvas {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: unset !important;
+    transform: none !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+
+  /* Remove rotating elements completely */
+  .bn-ring,
+  .bn-line {
+    display: none !important;
+  }
+
+  /* Fix center logo */
+  .bn-center {
+    position: static !important;
+    transform: none !important;
+    width: 90px !important;
+    height: 90px !important;
+    margin-bottom: 10px;
+  }
+
+  /* FORCE clean stacked boxes */
+  .bn-box {
+    position: static !important;
+    transform: none !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: 90% !important;
+    max-width: 340px !important;
+
+    padding: 14px 18px !important;
+    font-size: 14px !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  /* Remove all b1–b8 offsets */
+  .b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8 {
+    position: static !important;
+    transform: none !important;
+  }
+}
+
+/* Safari fix for animated text wrapping issue */
+.reveal-word {
+  display: inline;
+}
+
 /* ================================
    Header spacing fix for iPhone
    ================================ */
