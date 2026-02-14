@@ -1889,6 +1889,101 @@ img[alt="BCH"] {
   display: none !important;
 }
 
+/* =========================================
+   iPHONE / SAFARI PERFECT FIX
+   ========================================= */
+
+/* Prevent ANY horizontal scroll */
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
+/* Fix sticky nav bug on iOS */
+nav {
+  top: 0;
+}
+
+/* Disable background-attachment fixed (Safari breaks layout) */
+.hero,
+#about,
+#products,
+#membership,
+#services,
+#franchise,
+#contact {
+  background-attachment: scroll !important;
+}
+
+/* ================================
+   BN Ecosystem – Proper Mobile Layout
+   ================================ */
+@media (max-width: 768px) {
+
+  .bn-eco {
+    padding: 60px 20px;
+  }
+
+  .bn-canvas {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* Hide rotating rings & arrows */
+  .bn-ring,
+  .bn-line {
+    display: none !important;
+  }
+
+  /* Center logo properly */
+  .bn-center {
+    position: relative;
+    transform: none;
+    width: 90px;
+    height: 90px;
+  }
+
+  /* Make boxes clean stacked cards */
+  .bn-box {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    white-space: normal;
+    text-align: center;
+    padding: 14px 18px;
+    font-size: 14px;
+  }
+
+  /* Remove absolute offsets */
+  .b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8 {
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+  }
+}
+
+/* ================================
+   Header spacing fix for iPhone
+   ================================ */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+}
+
 </style>
 
 </style>
