@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Franchise | BhooNidhi</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* ================= BODY ================= */
+body{
+  margin:0;
+  font-family:'Belleza',sans-serif;
+  background:#f7faf9;
+  overflow-x:hidden;
+}
+
+/* ================= HERO PARALLAX ================= */
+.franchise-hero{
+  height:80vh;
+  background:url('franchiseback1.jpeg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:0 8%;
+}
+.franchise-hero h1{
+  font-size:50px;
+  margin-bottom:20px;
+  animation:fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(40px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* ================= INTRO ================= */
+.franchise-intro{
+  padding:120px 8%;
+  text-align:center;
+  max-width:900px;
+  margin:auto;
+}
+
+.franchise-intro h2{
+  font-size:36px;
+  color:#1f5133;
+}
+
+.franchise-intro p{
+  font-size:18px;
+  line-height:1.8;
+  color:#444;
+}
+
+/* ================= BENEFITS GRID ================= */
+.franchise-benefits{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:40px;
+
+  padding:1px 5%;   /* reduced from 100px */
+  margin:0;          /* ensure no extra spacing */
+}
+
+.benefit-card{
+  background:#fff;
+  padding:40px;
+  border-radius:25px;
+  box-shadow:0 20px 50px rgba(255, 255, 255, 0.08);
+  transition:.4s ease;
+}
+
+.benefit-card:hover{
+  transform:translateY(-15px);
+}
+
+.benefit-card h3{
+  color:#2f6f4e;
+}
+
+/* ================= 3D BACKGROUND SECTION ================= */
+.franchise-3d{
+  position:relative;
+  padding:150px 8%;
+  text-align:center;
+  color:#fff;
+  background:linear-gradient(135deg,#2f6f4e,#0ea5e9);
+  overflow:hidden;
+}
+
+.franchise-3d::before{
+  content:"";
+  position:absolute;
+  width:600px;
+  height:600px;
+  background:radial-gradient(circle,rgba(255,255,255,.2),transparent 70%);
+  border-radius:50%;
+  top:-200px;
+  left:-200px;
+  animation:floatBg 15s infinite alternate ease-in-out;
+}
+
+@keyframes floatBg{
+  from{transform:translate(0,0);}
+  to{transform:translate(120px,80px);}
+}
+
+/* ================= GALLERY GRID ================= */
+.franchise-gallery{
+  padding:120px 8%;
+  text-align:center;
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  margin-top:60px;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:20px;
+  transition:.4s ease;
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.05);
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+
+  .franchise-benefits{
+    grid-template-columns:1fr;
+  }
+
+  .gallery-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+/* SCROLL ANIMATION */
+.reveal{
+  opacity:0;
+  transform:translateY(60px);
+  transition:1s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+.benefit-card{
+  background:#fff;
+  padding:40px;
+  border-radius:25px;
+  box-shadow:0 20px 50px rgba(0,0,0,.08);
+  transition:transform .2s ease;
+  transform-style:preserve-3d;
+}
+.franchise-roadmap{
+  padding:120px 8%;
+  text-align:center;
+}
+
+.roadmap-line{
+  display:flex;
+  justify-content:space-between;
+  margin-top:80px;
+  position:relative;
+}
+
+.roadmap-line::before{
+  content:"";
+  position:absolute;
+  top:50%;
+  left:0;
+  width:100%;
+  height:4px;
+  background:#2f6f4e;
+  z-index:-1;
+}
+
+.road-step{
+  background:#fff;
+  padding:30px;
+  border-radius:20px;
+  width:22%;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  animation:floatStep 4s ease-in-out infinite;
+}
+
+@keyframes floatStep{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-15px);}
+}
+
+@media(max-width:900px){
+  .roadmap-line{
+    flex-direction:column;
+    gap:40px;
+  }
+
+  .roadmap-line::before{
+    display:none;
+  }
+
+  .road-step{
+    width:100%;
+  }
+}
+
+.franchise-hero h1,
+.franchise-hero p{
+  color:#ffffff;
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="franchise-hero">
+  <div>
+    <h1>Grow With BhooNidhi Franchise</h1>
+    <p>Empowering rural entrepreneurs through technology and agriculture innovation.</p>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="franchise-intro">
+  <h2>Why Partner With Us?</h2>
+  <p>
+    BhooNidhi franchise model offers machinery distribution,
+    service support, brand recognition, and sustainable growth
+    opportunities across Karnataka.
+  </p>
+</section>
+
+<!-- BENEFITS -->
+<section class="franchise-benefits">
+  <div class="benefit-card">
+    <h3>Low Investment</h3>
+    <p>Affordable entry with scalable revenue potential.</p>
+  </div>
+
+  <div class="benefit-card">
+    <h3>Service Network</h3>
+    <p>Full technical and marketing support provided.</p>
+  </div>
+
+  <div class="benefit-card">
+    <h3>High Demand Market</h3>
+    <p>Agricultural machinery demand is rapidly growing.</p>
+  </div>
+</section>
+
+<section class="franchise-roadmap reveal">
+  <h2>Expansion Roadmap</h2>
+
+  <div class="roadmap-line">
+    <div class="road-step">
+      <span>Step 1</span>
+      <h4>Apply</h4>
+      <p>Submit franchise application & verification.</p>
+    </div>
+
+    <div class="road-step">
+      <span>Step 2</span>
+      <h4>Setup</h4>
+      <p>Shop setup, branding & product supply.</p>
+    </div>
+
+    <div class="road-step">
+      <span>Step 3</span>
+      <h4>Launch</h4>
+      <p>Marketing support & official launch.</p>
+    </div>
+
+    <div class="road-step">
+      <span>Step 4</span>
+      <h4>Scale</h4>
+      <p>Expand services & district coverage.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3D SECTION -->
+<section class="franchise-3d">
+  <h2>District-Based Empowerment Model</h2>
+  <p>Structured expansion roadmap ensuring local growth and stability.</p>
+</section>
+
+<!-- GALLERY -->
+<section class="franchise-gallery">
+  <h2>Our Franchise Network</h2>
+
+  <div class="gallery-grid">
+    <img src="franchisegrid1.jpeg">
+    <img src="founder.jpg">
+    <img src="team2.jpg">
+    <img src="team3.jpg">
+    <img src="nature.jpeg">
+    <img src="team2.jpg">
+  </div>
+</section>
+
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll",()=>{
+  reveals.forEach(el=>{
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+
+    if(elementTop < windowHeight - 100){
+      el.classList.add("active");
+    }
+  });
+});
+</script>
+<script>
+document.querySelectorAll(".benefit-card").forEach(card=>{
+  card.addEventListener("mousemove",(e)=>{
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const rotateY = (x / rect.width - 0.5) * 15;
+    const rotateX = (y / rect.height - 0.5) * -15;
+
+    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+
+  card.addEventListener("mouseleave",()=>{
+    card.style.transform = "rotateX(0) rotateY(0)";
+  });
+});
+</script>
+</body>
+</html>

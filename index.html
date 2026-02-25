@@ -1,0 +1,3226 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Tags -->
+<title>BhooNidhi | Agritech & Empowerment Solutions in Karnataka</title>
+<meta name="description" content="BhooNidhi offers advanced agritech solutions, farm monitoring, digital agriculture services and franchise opportunities across Karnataka.">
+<meta name="keywords" content="Agritech Karnataka, Farm Monitoring, Digital Agriculture, Agri Franchise, BhooNidhi">
+<meta name="author" content="BhooNidhi">
+<link rel="canonical" href="https://www.bhoonidhi.org.in/">
+
+<meta property="og:title" content="BhooNidhi Agritech & Empowerment Solutions">
+<meta property="og:description" content="Empowering farmers with modern agritech and digital farming solutions.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="logo3.png">
+
+<meta name="description" content="Powering smarter farming with reliable agricultural power tools, professional service support, farmer-first membership benefits and rural franchise opportunities.">
+<meta property="og:title" content="BhooNidhi - Powering Smarter Farming">
+<meta property="og:description" content="Reliable agricultural power tools, farmer membership benefits and rural franchise opportunities.">
+<meta property="og:type" content="website">
+<link rel="icon" href="logo3.png">
+
+<!-- Favicon -->
+<link rel="icon" href="logo3.png" type="image/jpg">
+
+<!-- Belleza Font -->
+<link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+body{
+    margin:0;
+    font-family: 'Belleza', sans-serif;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    align-items:center;
+    padding:10px 40px;
+    background:#ffffff;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    position:relative;
+}
+
+/* Center Navigation */
+nav{
+    position:absolute;
+    left:70%;
+    transform:translateX(-50%);
+}
+
+/* LOGO + NAME SECTION */
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+/* LOGO IMAGE */
+.logo-section img{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+/* COMPANY NAME */
+.company-name{
+    display:flex;
+    flex-direction:column;
+}
+
+.company-name h1{
+    font-size:20px;
+    margin:0;
+    color:green;
+}
+
+.company-name span{
+    font-size:12px;
+    color:green;
+}
+
+/* NAVIGATION */
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+    margin:0;
+    padding:0;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#000000;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#000000;
+}
+
+/* MOBILE MENU */
+.menu-toggle{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    nav{
+        position:absolute;
+        top:70px;
+        right:0;
+        background:#fff;
+        width:200px;
+        display:none;
+        box-shadow:0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    nav ul{
+        flex-direction:column;
+        padding:20px;
+        gap:15px;
+    }
+
+    nav.active{
+        display:block;
+    }
+
+    .menu-toggle{
+        display:block;
+        position:absolute;
+        right:20px;   /* Move more right */
+        top:50%;
+        transform:translateY(-50%);
+    }
+}
+/* HERO SECTION */
+/* ===== PREMIUM HERO SCROLL EFFECT ===== */
+
+.hero-section{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+    background:url('nature.jpeg') center/cover no-repeat fixed;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+    color:#fff;
+    transition:opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Dark overlay */
+.hero-section::after{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+    z-index:1;
+}
+
+/* Content container */
+.hero-container{
+    position:relative;
+    z-index:2;
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:60px;
+}
+
+/* Text animation */
+.hero-content{
+    max-width:500px;
+    transition:all 0.6s ease;
+}
+
+.hero-content h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+/* Image animation */
+.hero-image img{
+    max-height:85vh;
+    width:auto;
+    transition:transform 0.6s ease;
+}
+
+/* Second section attaches smoothly */
+.next-section{
+    position:relative;
+    margin-top:-120px;
+    padding-top:200px;
+    background:#ffffff;
+    z-index:3;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+
+    .hero-container{
+        flex-direction:column;
+        text-align:center;
+        gap:30px;
+    }
+
+    .hero-content h2{
+        font-size:30px;
+    }
+
+    .hero-image img{
+        max-height:300px;
+    }
+
+    .next-section{
+        margin-top:-80px;
+        padding-top:120px;
+    }
+}
+
+/* OVERLAP EFFECT */
+.next-section{
+    background:#ffffff;
+    margin-top:-120px;
+    border-radius:20px 20px 0 0;
+    padding:80px 20px;
+    position:relative;
+    z-index:3;
+    box-shadow:0 -5px 20px rgba(0,0,0,0.1);
+}
+
+.content-box{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.hero-content h2{
+    font-size:30px;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.next-section{
+    margin-top:-80px;
+    padding:50px 20px;
+}
+
+}
+
+/* Keep header above hero background */
+header{
+    position:relative;
+    z-index:1000;
+}
+
+/* Ensure hero stays below nav */
+.hero-section{
+    position:relative;
+    z-index:1;
+}
+
+/* Sticky Header on Scroll */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#ffffff;
+}
+/* Make hero sticky until next section pushes it */
+.hero-section{
+    position:sticky;
+    top:0;
+    z-index:1;
+}
+
+/* Smooth reveal of next section */
+.next-section{
+    position:relative;
+    z-index:2;
+    margin-top:-150px; /* adjust overlap */
+    padding-top:200px;
+    scroll-behavior:smooth;
+}
+
+/* Make hero sticky until next section pushes it */
+.hero-section{
+    position:sticky;
+    top:0;
+    z-index:1;
+}
+
+/* Smooth reveal of next section */
+.next-section{
+    position:relative;
+    z-index:2;
+    margin-top:-150px; /* adjust overlap */
+    padding-top:200px;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+/* Floating farmer animation */
+.hero-image img{
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+    0%{ transform:translateY(0px); }
+    50%{ transform:translateY(-15px); }
+    100%{ transform:translateY(0px); }
+}
+
+/* Reduce space above About section */
+.next-section {
+  height: auto !important;
+  min-height: auto !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Move About section upward */
+#about {
+  margin-top: -200px;
+  padding-top: 40px;
+}
+
+/* ===============================
+   WHO WE ARE SECTION (Scoped)
+================================ */
+
+#about{
+    text-align:center;
+    max-width:1200px;
+    margin:0 auto;
+    padding:80px 20px 100px;
+    margin-top: -200px;
+}
+
+/* Title */
+#about h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+/* Description */
+#about > p{
+    max-width:800px;
+    margin:0 auto 60px;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* Grid Layout */
+#about .grid{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+/* Card Base */
+#about .vision-card,
+#about .mission-card,
+#about .values-card{
+    width:200px;
+    background:#f5f5f5;
+    border-radius:200px 200px 40px 40px;
+    padding:60px 30px 40px;
+    transition:all 0.4s ease;
+    position:relative;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+/* Circle Icon Area */
+#about .vision-card::before,
+#about .mission-card::before,
+#about .values-card::before{
+    content:"";
+    width:70px;
+    height:70px;
+    background:#ff8800;
+    border-radius:50%;
+    position:absolute;
+    top:25px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+/* Card Headings */
+#about h3{
+    margin-top:80px;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+/* Card Text */
+#about p,
+#about li{
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* Remove default ul style */
+#about ul{
+    list-style:none;
+    padding:0;
+}
+
+/* Hover Fill Effect */
+#about .vision-card:hover,
+#about .mission-card:hover,
+#about .values-card:hover{
+    background:green;
+    color:#ffffff;
+    transform:translateY(-10px);
+}
+
+/* Make text contrast on hover */
+#about .vision-card:hover h3,
+#about .mission-card:hover h3,
+#about .values-card:hover h3,
+#about .vision-card:hover p,
+#about .mission-card:hover p,
+#about .values-card:hover li{
+    color:#ffffff;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+
+    #about{
+        padding:60px 15px;
+    }
+
+    #about h2{
+        font-size:30px;
+    }
+
+    #about .grid{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    #about .vision-card,
+    #about .mission-card,
+    #about .values-card{
+        width:80%;
+        max-width:350px;
+    }
+}
+
+/* Icon Circle */
+#about .icon-circle{
+    width:70px;
+    height:70px;
+    background:green;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 20px;
+    position:absolute;
+    top:25px;
+    left:50%;
+    transform:translateX(-50%);
+    transition:0.4s ease;
+}
+
+/* Icon Style */
+#about .icon-circle i{
+    color:#ffffff;
+    font-size:26px;
+    transition:0.4s ease;
+}
+
+/* Hover Effect */
+#about .vision-card:hover .icon-circle,
+#about .mission-card:hover .icon-circle,
+#about .values-card:hover .icon-circle{
+    background:#ffffff;
+}
+
+#about .vision-card:hover .icon-circle i,
+#about .mission-card:hover .icon-circle i,
+#about .values-card:hover .icon-circle i{
+    color:green;
+}
+
+/* ==============================
+   BRANDS SCROLL SECTION
+================================ */
+
+.brands-trust{
+    padding:80px 0;
+    background:#ffffff;
+    overflow:hidden;
+    position:relative;
+}
+
+.brands-title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:50px;
+}
+
+/* Track wrapper */
+.brands-track{
+    display:flex;
+    width:max-content;
+    animation: scrollBrands 20s linear infinite;
+}
+
+/* Duplicate effect requires repeating cards in HTML */
+.brands-track:hover{
+    animation-play-state: paused; /* Pause on hover */
+}
+
+/* Brand Card */
+.brand-card{
+    width:220px;
+    height:120px;
+    background:#ffffff;
+    border-radius:20px;
+    margin:0 25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 5px 20px rgb(0, 0, 0);
+    transition:0.3s ease;
+}
+
+.brand-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.brand-logo{
+    max-width:140px;
+    max-height:70px;
+    object-fit:contain;
+    filter:grayscale(100%);
+    transition:0.3s ease;
+}
+
+.brand-card:hover .brand-logo{
+    filter:grayscale(0%);
+}
+
+/* Animation */
+@keyframes scrollBrands{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(-50%);
+    }
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .brand-card{
+        width:160px;
+        height:90px;
+        margin:0 15px;
+    }
+
+    .brands-title{
+        font-size:26px;
+    }
+}
+
+.brands img,
+.banks img{
+    filter:none !important;
+    opacity:1 !important;
+}
+
+/* Container height control */
+.brands,
+.banks{
+    overflow:hidden;
+    padding:40px 0;
+    background:#f8f8f8;
+}
+
+/* Track for animation */
+.logo-track{
+    display:flex;
+    gap:40px;
+    animation: scrollLogos 25s linear infinite;
+    width:max-content;
+}
+
+/* Make logos same size */
+.logo-track img{
+    height:60px;
+    width:auto;
+    object-fit:contain;
+}
+
+/* Continuous scrolling */
+@keyframes scrollLogos{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+/* height of the brand moving */
+.brands-section{
+    min-height:50vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+/* service and support */
+.service-advanced{
+    padding:80px 20px;
+    background:#f4f7f5;
+}
+
+.service-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.service-header h2{
+    font-size:38px;
+}
+
+.service-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.service-form-box{
+    background:#ffffff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.service-form input,
+.service-form select,
+.service-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    font-family:inherit;
+}
+
+.service-form textarea{
+    min-height:80px;
+}
+
+.btn-primary{
+    width:100%;
+    padding:12px;
+    background:#2d6a4f;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.btn-secondary{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    background:#ff9800;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    color:white;
+}
+
+.btn-whatsapp{
+    display:block;
+    margin-top:15px;
+    text-align:center;
+    padding:12px;
+    background:#25D366;
+    color:white;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.service-process{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.process-step{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.process-step:hover{
+    transform:translateY(-5px);
+}
+
+.icon{
+    font-size:30px;
+    margin-bottom:10px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-6px);}
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .service-layout{
+        grid-template-columns:1fr;
+    }
+}
+
+/* ===== MOBILE CARD FIX ONLY ===== */
+@media (max-width:768px){
+
+.service-card,
+.timeline-card,
+.support-card,
+.eco-item {
+
+    width:100% !important;
+    max-width:100% !important;
+    margin:15px auto !important;
+    box-sizing:border-box;
+}
+
+/* Remove any fixed width inside cards */
+.service-card *,
+.timeline-card *,
+.support-card * {
+    max-width:100% !important;
+}
+
+/* Prevent horizontal scroll */
+body{
+    overflow-x:hidden;
+}
+
+}
+
+/* Common Button Style */
+.btn{
+    display:block;
+    text-align:center;
+    padding:14px 20px;
+    margin:12px 0;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none;
+    color:#fff;
+    transition:0.3s ease;
+}
+
+/* Book Service - Dark Green */
+.btn-book{
+    background:#2f6f4e;
+}
+.btn-book:hover{
+    background:#24563c;
+}
+
+/* Request Call Back - Orange */
+.btn-callback{
+    background:#f59e0b;
+}
+.btn-callback:hover{
+    background:#d97706;
+}
+
+/* WhatsApp - Bright Green */
+.btn-whatsapp{
+    background:#25D366;
+}
+.btn-whatsapp:hover{
+    background:#1ebe5d;
+}
+
+/* ===== PREMIUM BUTTON BASE ===== */
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:15px 25px;
+    margin:15px 0;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none;
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+    transition:all 0.4s ease;
+}
+
+/* ICON STYLE */
+.btn span{
+    font-size:18px;
+    transition:0.3s ease;
+}
+
+/* ===== GRADIENT COLORS ===== */
+
+/* Book Service */
+.btn-book{
+    background:linear-gradient(135deg,#2f6f4e,#3fa96d);
+    box-shadow:0 10px 25px rgba(47,111,78,0.4);
+}
+
+/* Request Call Back */
+.btn-callback{
+    background:linear-gradient(135deg,#f59e0b,#ffb703);
+    box-shadow:0 10px 25px rgba(245,158,11,0.4);
+}
+
+/* WhatsApp */
+.btn-whatsapp{
+    background:linear-gradient(135deg,#25D366,#1ebe5d);
+    box-shadow:0 10px 25px rgba(37,211,102,0.4);
+}
+
+/* ===== HOVER ANIMATION ===== */
+.btn::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,0.2);
+    transform:skewX(-20deg);
+    transition:0.6s;
+}
+
+.btn:hover::before{
+    left:100%;
+}
+
+/* Slight lift effect */
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Icon slide animation */
+.btn:hover span{
+    transform:translateX(4px);
+}
+
+.service-layout{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+    margin-top:50px;
+}
+
+/* LEFT SIDE */
+.service-left{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+/* RIGHT SIDE */
+.service-process{
+    flex:1;
+}
+
+/* Buttons spacing */
+.service-buttons{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+/* Make buttons full width */
+.service-buttons .btn{
+    width:80%;
+}
+
+@media (max-width: 992px){
+
+    .service-layout{
+        flex-direction:column;
+    }
+
+    .service-left,
+    .service-process{
+        width:100%;
+    }
+
+    .service-process{
+        margin-top:40px;
+    }
+}
+
+.services-preview{
+    padding:100px 20px;
+    background:#f8fbfa;
+    text-align:center;
+}
+
+.services-preview h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.services-preview p{
+    max-width:700px;
+    margin:0 auto 50px;
+    color:#555;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.service-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    transition:all .4s ease;
+}
+
+.service-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.service-content{
+    padding:25px;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 50px rgba(0,0,0,0.15);
+}
+
+@media (max-width:992px){
+    .service-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media (max-width:600px){
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+/* ================= FRANCHISE SECTION ================= */
+
+.franchise-section{
+    padding:100px 20px;
+    background:rgba(255, 245, 227, 0.811);
+    text-align:center;
+}
+
+.franchise-header h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.franchise-header p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:60px;
+}
+
+/* 3D Slider */
+.franchise-slider-wrapper{
+    position:relative;
+    margin-bottom:80px;
+}
+
+.franchise-slider{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    transition:0.6s ease;
+}
+
+.fr-slide{
+    width:300px;
+    height:420px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgb(238, 235, 235);
+    transform:perspective(1000px) rotateY(20deg) scale(0.9);
+    transition:0.6s ease;
+}
+
+.fr-slide.center{
+    transform:perspective(1000px) rotateY(0deg) scale(1);
+}
+
+.fr-slide:nth-child(3){
+    transform:perspective(1000px) rotateY(-20deg) scale(0.9);
+}
+
+.fr-slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Navigation */
+.fr-nav{
+    margin-top:30px;
+}
+
+.fr-nav button{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:none;
+    background:#1f1f1f;
+    color:#fff;
+    font-size:20px;
+    margin:0 10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.fr-nav button:hover{
+    background:#444;
+}
+
+/* Info Grid */
+.franchise-info-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.fr-card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.fr-card:hover{
+    transform:translateY(-10px);
+}
+
+/* Responsive */
+@media(max-width:992px){
+    .franchise-info-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media(max-width:768px){
+    .franchise-slider{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .fr-slide{
+        transform:none !important;
+    }
+
+    .franchise-info-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+/* ================= MOBILE IMAGE FIX ================= */
+@media (max-width:768px){
+
+    .franchise-slider-wrapper{
+        position:relative;
+        overflow:hidden;
+    }
+
+    .franchise-slider{
+        position:relative;
+        height:420px;   /* IMPORTANT */
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .fr-slide{
+        position:absolute;
+        width:85%;
+        max-width:320px;
+        height:420px;
+        border-radius:20px;
+        overflow:hidden;
+    }
+
+    .fr-slide img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        display:block;
+    }
+
+}
+
+/* ================= STATS SECTION ================= */
+
+.stats-section{
+    position:relative;
+    padding:100px 20px;
+    background:#ffffff;
+    overflow:hidden;
+}
+
+/* Grid Block Background */
+.stats-section::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image:
+        /* linear-gradient(rgb(0, 0, 0) 1px, transparent 1px), */
+        linear-gradient(90deg, rgba(0, 0, 0, 0) 1px, transparent 1px);
+    background-size:50px 50px;
+    z-index:1;
+}
+
+.stats-container{
+    position:relative;
+    z-index:2;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+    text-align:center;
+    color:green;
+}
+
+.stat-box{
+    padding:40px 20px;
+    border-right:1px solid rgb(0, 0, 0);
+}
+
+.stat-box:last-child{
+    border-right:none;
+}
+
+.stat-number{
+    font-size:48px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.rating-number{
+    font-size:48px;
+    font-weight:bold;
+}
+
+.rating-number span{
+    font-size:20px;
+    opacity:0.8;
+}
+
+.stat-label{
+    font-size:18px;
+    opacity:0.9;
+}
+
+/* Responsive */
+@media(max-width:992px){
+    .stats-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:600px){
+    .stats-container{
+        grid-template-columns:1fr;
+    }
+    .stat-box{
+        border-right:none;
+        border-bottom:1px solid rgb(0, 0, 0);
+    }
+}
+
+/* ================= STATS ICON STYLE ================= */
+
+.stat-icon{
+    font-size:40px;
+    margin-bottom:15px;
+    transition:0.4s ease;
+}
+
+.stat-box:hover .stat-icon{
+    transform:scale(1.2);
+    
+}
+
+/* ===== PRODUCTS SECTION PERFECT OVERLAP ===== */
+
+.bn-products{
+  padding:100px 8%;
+  background:#f5f5f5;
+}
+
+.bn-products-wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:80px;
+}
+
+/* IMAGE CONTAINER */
+.bn-products-images{
+  position:relative;
+  width:45%;
+  min-width:320px;
+}
+
+/* MAIN IMAGE */
+.bn-img-main{
+  width:100%;
+  border-radius:25px;
+  display:block;
+  box-shadow:0 30px 60px rgba(0,0,0,0.25);
+}
+
+/* HALF OVERLAP IMAGE */
+.bn-img-overlap{
+  position:absolute;
+  width:75%;
+  left:-40px;
+  bottom:-50px;
+  border-radius:25px;
+  transform:rotate(-8deg);
+  box-shadow:0 25px 50px rgba(0,0,0,0.3);
+  border:8px solid #fff;
+}
+
+/* RIGHT CONTENT */
+.bn-products-content{
+  width:50%;
+}
+
+.bn-badge{
+  background:#e5e7eb;
+  padding:6px 15px;
+  border-radius:20px;
+  font-size:14px;
+}
+
+.bn-products-content h2{
+  font-size:40px;
+  margin:20px 0;
+}
+
+.bn-products-content p{
+  color:#555;
+  line-height:1.7;
+}
+
+.bn-products-features{
+  margin-top:25px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.bn-products-features div{
+  background:#ffffff;
+  padding:18px;
+  border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.05);
+}
+
+.bn-btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 35px;
+  background:#2f6f4e;
+  color:#fff;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:600;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media(max-width:900px){
+
+  .bn-products-wrapper{
+    flex-direction:column;
+    gap:60px;
+  }
+
+  .bn-products-images{
+    width:100%;
+  }
+
+  /* KEEP SAME HALF OVERLAP ON MOBILE */
+  .bn-img-overlap{
+    left:-20px;
+    bottom:-40px;
+    width:80%;
+  }
+
+  .bn-products-content{
+    width:100%;
+    margin-top:40px;
+    text-align:center;
+  }
+
+  .bn-products-features{
+    grid-template-columns:1fr;
+  }
+}
+
+/* ===== PREMIUM SCROLL ANIMATION ===== */
+
+.bn-products .fade-up{
+  opacity:0;
+  transform:translateY(60px);
+  transition:all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bn-products .fade-left{
+  opacity:0;
+  transform:translateX(-80px);
+  transition:all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bn-products .fade-right{
+  opacity:0;
+  transform:translateX(80px);
+  transition:all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bn-products .show{
+  opacity:1;
+  transform:translate(0,0);
+}
+
+/* Smooth hover micro interaction */
+.bn-img-main,
+.bn-img-overlap{
+  transition:transform .6s ease, box-shadow .6s ease;
+}
+
+.bn-products-images:hover .bn-img-main{
+  transform:scale(1.03);
+}
+
+.bn-products-images:hover .bn-img-overlap{
+  transform:rotate(-6deg) scale(1.05);
+}
+
+/* ===== CINEMATIC BACKGROUND MORPH ===== */
+
+.bn-products{
+  padding:100px 8%;
+  background:linear-gradient(120deg, #f5f5f5, #eef2f7, #f5f5f5);
+  background-size:200% 200%;
+  animation:bgShift 12s ease-in-out infinite;
+  position:relative;
+  overflow:hidden;
+}
+
+@keyframes bgShift{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* Smooth transform */
+.bn-img-main,
+.bn-img-overlap{
+  will-change:transform;
+  transition:transform .2s ease-out;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+/* ===== MOUSE 3D TILT EFFECT ===== */
+
+.bn-products-images{
+  perspective:1200px;
+}
+
+.bn-tilt-wrapper{
+  transform-style:preserve-3d;
+  transition:transform 0.25s ease;
+}
+
+.bn-img-main,
+.bn-img-overlap{
+  transform-style:preserve-3d;
+  backface-visibility:hidden;
+}
+
+/* Depth layers */
+.bn-img-main{
+  transform:translateZ(40px);
+}
+
+.bn-img-overlap{
+  transform:translateZ(80px) rotate(-8deg);
+}
+
+
+/* ===== PREMIUM PRO CONTACT ===== */
+
+.bn-contact{
+  padding:120px 8%;
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(135deg,#f0f4f8,#e8f5e9);
+}
+
+/* Floating Shapes */
+.bn-contact-bg span{
+  position:absolute;
+  border-radius:50%;
+  background:rgba(47,111,78,0.08);
+  animation:floatShape 12s infinite ease-in-out;
+}
+
+.bn-contact-bg span:nth-child(1){
+  width:200px;height:200px;top:-50px;left:-50px;
+}
+.bn-contact-bg span:nth-child(2){
+  width:150px;height:150px;bottom:50px;right:100px;
+  animation-delay:3s;
+}
+.bn-contact-bg span:nth-child(3){
+  width:100px;height:100px;top:200px;right:-40px;
+  animation-delay:6s;
+}
+
+@keyframes floatShape{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-30px)}
+}
+
+/* Layout */
+.bn-contact-wrapper{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:80px;
+  position:relative;
+  z-index:2;
+}
+
+.bn-contact-info{width:45%}
+.bn-contact-form{width:45%}
+
+/* Glass Form */
+.bn-contact-form{
+  backdrop-filter:blur(15px);
+  background:rgba(255,255,255,0.7);
+  padding:50px;
+  border-radius:30px;
+  box-shadow:0 40px 80px rgba(0,0,0,0.15);
+}
+
+/* Floating Label Input */
+.bn-input{
+  position:relative;
+  margin-bottom:25px;
+}
+
+.bn-input input,
+.bn-input textarea{
+  width:100%;
+  padding:16px;
+  border-radius:12px;
+  border:1px solid #ccc;
+  font-size:15px;
+  background:transparent;
+  outline:none;
+}
+
+.bn-input label{
+  position:absolute;
+  left:16px;
+  top:16px;
+  color:#777;
+  font-size:14px;
+  transition:0.3s ease;
+  pointer-events:none;
+}
+
+.bn-input input:focus + label,
+.bn-input input:not(:placeholder-shown) + label,
+.bn-input textarea:focus + label,
+.bn-input textarea:not(:placeholder-shown) + label{
+  top:-10px;
+  left:12px;
+  font-size:12px;
+  background:#fff;
+  padding:2px 6px;
+  border-radius:6px;
+  color:#2f6f4e;
+}
+
+/* Button */
+.bn-contact-form button{
+  width:100%;
+  padding:15px;
+  border:none;
+  border-radius:30px;
+  background:linear-gradient(135deg,#2f6f4e,#3fa96d);
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.bn-contact-form button:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 40px rgba(47,111,78,0.4);
+}
+
+/* Success message */
+.bn-success{
+  margin-top:15px;
+  font-size:14px;
+  color:green;
+  display:none;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .bn-contact-wrapper{
+    flex-direction:column;
+  }
+  .bn-contact-info,
+  .bn-contact-form{
+    width:100%;
+  }
+  .bn-contact-info{
+    text-align:center;
+  }
+}
+
+/* ===== CONTACT MOBILE FIX ===== */
+@media (max-width: 768px){
+
+  .bn-contact{
+    padding: 60px 20px !important;
+  }
+
+  .bn-contact-wrapper{
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+
+  .bn-contact-info,
+  .bn-contact-form{
+    width: 100% !important;
+  }
+
+  .bn-contact-form{
+    padding: 25px !important;
+    border-radius: 20px !important;
+  }
+
+  .bn-input input,
+  .bn-input textarea{
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .bn-input{
+    margin-bottom: 20px;
+  }
+
+  /* Prevent horizontal overflow */
+  body{
+    overflow-x: hidden;
+  }
+
+}
+
+/* ===== CONTACT MOBILE FIX ===== */
+@media (max-width: 768px){
+
+  .bn-contact{
+    padding: 60px 20px !important;
+  }
+
+  .bn-contact-wrapper{
+    flex-direction: column !important;
+    gap: 40px !important;
+  }
+
+  .bn-contact-info,
+  .bn-contact-form{
+    width: 100% !important;
+  }
+
+  .bn-contact-form{
+    padding: 25px !important;
+    border-radius: 20px !important;
+  }
+
+  .bn-input input,
+  .bn-input textarea{
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .bn-input{
+    margin-bottom: 20px;
+  }
+
+  /* Prevent horizontal overflow */
+  body{
+    overflow-x: hidden;
+  }
+
+}
+
+/* ===== STATS SINGLE LINE FIX ===== */
+
+.stats-section{
+    padding:60px 20px;
+    background:#ffffff;
+}
+
+.stats-container{
+    display:flex !important;
+    justify-content:space-between !important;
+    align-items:center !important;
+    flex-wrap:nowrap !important;   /* Force single line */
+    max-width:1200px;
+    margin:auto;
+    gap:20px;
+}
+
+.stat-box{
+    flex:1;
+    text-align:center;
+    padding:20px 10px;
+    border-right:1px solid #e5e5e5;
+}
+
+.stat-box:last-child{
+    border-right:none;
+}
+
+/* Icon */
+.stat-icon{
+    font-size:28px;
+    color:green;
+    margin-bottom:10px;
+}
+
+/* Numbers */
+.stat-number,
+.rating-number{
+    font-size:36px;
+    font-weight:600;
+    color:#0f8211;
+}
+
+.rating-number span{
+    font-size:18px;
+    color:green;
+}
+
+/* Label */
+.stat-label{
+    margin-top:8px;
+    font-size:14px;
+    color:rgb(10, 10, 10);
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width:768px){
+
+    .stats-container{
+        flex-direction:column !important;
+    }
+
+    .stat-box{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid #e5e5e5;
+    }
+
+    .stat-box:last-child{
+        border-bottom:none;
+    }
+}
+
+/* ================= FLOATING LEFT IMAGE ================= */
+
+.floating-left-slider{
+  position:absolute;
+  left:5%;
+  top:40%;
+  transform:translateY(-50%);
+  width:420px;
+  height:480px;
+  pointer-events:none;
+  z-index:5;
+}
+
+.float-slide{
+  position:absolute;
+  width:100%;
+  height:120%;
+  object-fit:cover;
+  border-radius:25px;
+  box-shadow:0 30px 80px rgba(0,0,0,0.35);
+  opacity:0;
+  transform:translateX(-150%);
+  transition:transform 0.8s cubic-bezier(.22,1,.36,1),
+             opacity 0.5s ease;
+}
+
+.float-slide.active{
+  opacity:1;
+  transform:translateX(0);
+}
+
+.float-slide.exit{
+  transform:translateX(150%);
+  opacity:0;
+}
+
+@media(max-width:768px){
+
+  .floating-left-slider{
+    position:relative;
+    width:90%;
+    height:300px;
+    margin:30px auto 0 auto;
+    left:auto;
+    top:auto;
+    transform:none;
+    z-index:3;
+  }
+
+  .float-slide{
+    width:100%;
+    height:100%;
+    border-radius:20px;
+    transform:translateX(-120%);
+  }
+
+  .float-slide.active{
+    transform:translateX(0);
+  }
+
+  .float-slide.exit{
+    transform:translateX(120%);
+  }
+
+  /* Move hero text below image */
+  .hero-container{
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+  }
+
+}
+body{
+    background:linear-gradient(135deg,#f5f5f5,#e8f5e9);
+}
+
+body{
+    background:linear-gradient(120deg,#f5f5f5,#eef7f2,#f5f5f5);
+    background-size:200% 200%;
+    animation:homeShift 12s ease-in-out infinite;
+}
+
+@keyframes homeShift{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-section">
+        <img src="logo3.png" alt="BhooNidhi Agritech Company Logo Karnataka">
+        
+        <div class="company-name">
+            <h1>BhooNidhi</h1>
+            <span>Agritech & Empowerment Solutions</span>
+        </div>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <nav id="navMenu">
+        
+        <ul>
+          <li>
+  <a href="#" onclick="openPage('index.html')">Home</a>
+</li>
+          <li>
+  <a href="#" onclick="openPage('services.html')">Services</a>
+</li>
+
+<li>
+  <a href="#" onclick="openPage('products.html')">Products</a>
+</li>
+
+<li>
+  <a href="#" onclick="openPage('about.html')">AboutUs</a>
+</li>
+
+
+<li>
+  <a href="#" onclick="openPage('franchise.html')">Franchise</a>
+</li>
+
+        </ul>
+    </nav>
+
+</header>
+<script>
+function toggleMenu(){
+    document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+<section class="hero-section">
+  
+<!-- LEFT FLOATING IMAGE SLIDER -->
+<div class="floating-left-slider">
+  
+  <img src="sliding.jpeg" class="float-slide active">
+  <img src="sliding1.jpeg" class="float-slide">
+  <img src="franchise5.jpeg" class="float-slide">
+</div>
+    <div class="hero-container">
+        <div class="hero-content">
+            <h2>Powering Smarter Farming</h2>
+            <p>
+                Reliable agricultural power tools, professional service support,
+                farmer-first membership benefits, and rural franchise opportunities
+            </p>
+        </div>
+    </div>
+</section>
+<section class="next-section">
+    <section id="about">
+  <h2>Who We Are</h2>
+  <p>BhooNidhi Agritech & Empowerment Solutions is a farmer-centric agritech company providing modern farm machinery,service support, and farmer membership programs across Karnataka.
+
+
+  <div class="grid">
+    <div class="vision-card">
+    <div class="icon-circle">
+        <i class="fa-solid fa-seedling"></i>
+    </div>
+    <h3>Our Vision</h3>
+    <p>To become a trusted agritech partner for every farmer, improving agricultural productivity and rural well-being.</p>
+</div>
+
+<div class="mission-card">
+    <div class="icon-circle">
+        <i class="fa-solid fa-tractor"></i>
+    </div>
+    <h3>Our Mission</h3>
+    <ul>
+        <li>Make modern farm machinery accessible</li>
+        <li>Provide dependable grassroots service</li>
+        <li>Empower rural entrepreneurs</li>
+        <li>Support farmer families</li>
+    </ul>
+</div>
+
+<div class="values-card">
+    <div class="icon-circle">
+        <i class="fa-solid fa-handshake"></i>
+    </div>
+    <h3>Our Values</h3>
+    <ul>
+        <li>Farmer-first approach</li>
+        <li>Trust & transparency</li>
+        <li>Quality & reliability</li>
+        <li>Responsible innovation</li>
+        <li>Community development</li>
+    </ul>
+</div>
+  </div>
+  <!-- Brands That Trust Us -->
+<section class="brands-trust">
+  <h2 class="brands-title">Brands that trust us</h2>
+
+  <div class="brands-track">
+
+  <!-- First Set -->
+  <div class="brand-card">
+    <img src="Kasei.png" alt="KASEI" class="brand-logo">
+  </div>
+  <div class="brand-card">
+    <img src="agrimatelogo1.png" alt="AGRIMATE" class="brand-logo">
+  </div>
+  <div class="brand-card">
+    <img src="Oleo-mac.jpeg" alt="Oleo-Mac" class="brand-logo">
+  </div>
+
+  <!-- Duplicate Set (for smooth loop) -->
+  <div class="brand-card">
+    <img src="Kasei.png" alt="KASEI" class="brand-logo">
+  </div>
+  <div class="brand-card">
+    <img src="agrimatelogo1.png" alt="AGRIMATE" class="brand-logo">
+  </div>
+  <div class="brand-card">
+    <img src="Oleo-mac.jpeg" alt="Oleo-Mac" class="brand-logo">
+  </div>
+<div class="brand-card">
+    <img src="Kasei.png" alt="KASEI" class="brand-logo">
+  </div>
+   <div class="brand-card">
+    <img src="agrimatelogo1.png" alt="AGRIMATE" class="brand-logo">
+  </div>
+</div>
+
+</section>
+
+
+<script>
+window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) {
+        header.style.boxShadow = "0 4px 12px rgba(0,0,0,0.1)";
+    } else {
+        header.style.boxShadow = "0 2px 5px rgba(0,0,0,0.1)";
+    }
+});
+</script>
+<script>
+window.addEventListener("scroll", function() {
+
+    const hero = document.querySelector(".hero-section");
+    const text = document.querySelector(".hero-content");
+    const image = document.querySelector(".hero-image img");
+
+    let scrollY = window.scrollY;
+    let fadePoint = 400;
+
+    // Fade effect
+    hero.style.opacity = 1 - scrollY / fadePoint;
+
+    // Parallax background
+    hero.style.backgroundPositionY = scrollY * 0.5 + "px";
+
+    // Text slide up
+    text.style.transform = "translateY(" + scrollY * 0.3 + "px)";
+
+    // Image zoom out slightly
+    image.style.transform = "scale(" + (1 + scrollY * 0.0005) + ")";
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    const track = document.querySelector(".logo-track");
+    track.innerHTML += track.innerHTML;
+});
+</script>
+
+<!-- ================= FRANCHISE SECTION ================= -->
+
+<section id="franchise-section" class="franchise-section">
+
+    <div class="franchise-header">
+        <h2>Franchise Opportunity</h2>
+        <p>Join BhooNidhi Agritech and empower rural communities with modern agricultural solutions.</p>
+    </div>
+
+    <!-- 3D Slider -->
+    <div class="franchise-slider-wrapper">
+
+        <div class="franchise-slider">
+    
+            <div class="fr-slide center">
+                <img src="franchise2.jpeg" alt="Farmer Support">
+            </div>
+            
+            <div class="fr-slide">
+                <img src="franchise4.jpeg" alt="Equipment">
+            </div>
+            <div class="fr-slide">
+                <img src="franchise5.jpeg" alt="Equipment">
+            </div>
+        </div>
+
+        <div class="fr-nav">
+            <button onclick="prevFranchise()">←</button>
+            <button onclick="nextFranchise()">→</button>
+        </div>
+
+    </div>
+
+    <!-- Info Grid -->
+    <div class="franchise-info-grid">
+
+        <div class="fr-card">
+            <h3>Low Investment</h3>
+            <p>Affordable franchise model designed for rural entrepreneurs.</p>
+        </div>
+
+        <div class="fr-card">
+            <h3>Multiple Revenue Streams</h3>
+            <p>Earn from machinery sales, service support, spare parts & memberships.</p>
+        </div>
+
+        <div class="fr-card">
+            <h3>Exclusive Territory</h3>
+            <p>District-based rights ensuring focused growth and limited competition.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<!-- PREMIUM 3D PARTICLE LOADER -->
+<div id="pageLoader">
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Center Loader -->
+    <div class="loader-container">
+        <div class="ring ring1"></div>
+        <div class="ring ring2"></div>
+
+        <div class="logo-wrapper">
+            <img src="logo3.png" alt="BhooNidhi Logo">
+        </div>
+    </div>
+
+</div>
+
+<style>
+/* FULL SCREEN */
+#pageLoader{
+    position:fixed;
+    inset:0;
+    background:#0f172a;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:9999;
+    opacity:0;
+    visibility:hidden;
+    transition:0.4s ease;
+}
+
+#pageLoader.active{
+    opacity:1;
+    visibility:visible;
+}
+
+/* PARTICLE BACKGROUND */
+#particles-js{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+/* CENTER CONTAINER */
+.loader-container{
+    position:relative;
+    width:170px;
+    height:170px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:2;
+}
+
+/* LOGO */
+.logo-wrapper{
+    width:95px;
+    height:95px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 0 30px rgba(37,211,102,0.3);
+}
+
+.logo-wrapper img{
+    width:75px;
+    height:75px;
+    border-radius:50%;
+}
+
+/* RINGS */
+.ring{
+    position:absolute;
+    border-radius:50%;
+    border:3px solid transparent;
+}
+
+.ring1{
+    width:160px;
+    height:160px;
+    border-top:3px solid #25D366;
+    border-right:3px solid #2f6f4e;
+    animation:spinClockwise 1.2s linear infinite;
+}
+
+.ring2{
+    width:130px;
+    height:130px;
+    border-bottom:3px solid #ffb703;
+    border-left:3px solid #f59e0b;
+    animation:spinAntiClockwise 1.5s linear infinite;
+}
+
+@keyframes spinClockwise{
+    from{ transform:rotate(0deg); }
+    to{ transform:rotate(360deg); }
+}
+
+@keyframes spinAntiClockwise{
+    from{ transform:rotate(360deg); }
+    to{ transform:rotate(0deg); }
+}
+</style>
+
+<script>
+function openPage(url){
+
+    const loader = document.getElementById("pageLoader");
+    loader.classList.add("active");
+
+    setTimeout(function(){
+        window.location.href = url;
+    }, 2000);
+}
+</script>
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 70 },
+    color: { value: "#25D366" },
+    shape: { type: "circle" },
+    opacity: { value: 0.5 },
+    size: { value: 3 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#25D366",
+      opacity: 0.4,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 2,
+      out_mode: "out"
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false },
+      onclick: { enable: false }
+    }
+  },
+  retina_detect: true
+});
+</script>
+
+<script>
+function nextFranchise(){
+    const slider = document.querySelector('.franchise-slider');
+    slider.appendChild(slider.firstElementChild);
+}
+
+function prevFranchise(){
+    const slider = document.querySelector('.franchise-slider');
+    slider.prepend(slider.lastElementChild);
+}
+</script>
+
+<!-- ================= PRODUCTS STATS SECTION ================= -->
+
+<section class="stats-section">
+
+    <div class="stats-container">
+
+        <div class="stat-box">
+            <div class="stat-icon">
+                <i class="fa-solid fa-box-open"></i>
+            </div>
+            <div class="stat-number" data-target="1500">0</div>
+            <div class="stat-label">Products</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-icon">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="stat-number" data-target="10000">0</div>
+            <div class="stat-label">Happy Customers</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <div class="stat-number" data-target="4">0</div>
+            <div class="stat-label">Brands</div>
+        </div>
+
+        <div class="stat-box">
+            <div class="stat-icon">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="rating-number">4.5<span>/5</span></div>
+            <div class="stat-label">Customer Rating</div>
+        </div>
+         <div class="stat-box">
+            <div class="stat-icon">
+                <i class="fa-solid fa-shop"></i>
+            </div>
+            <div class="rating-number">4<span></span></div>
+            <div class="stat-label">Franchise</div>
+        </div>
+    </div>
+
+</section>
+
+<script>
+const counters = document.querySelectorAll('.stat-number');
+
+const startCounting = () => {
+
+    counters.forEach(counter => {
+
+        const target = +counter.getAttribute('data-target');
+        let count = 0;
+        const increment = target / 100;
+
+        const updateCount = () => {
+            if(count < target){
+                count += increment;
+                counter.innerText = Math.floor(count);
+                requestAnimationFrame(updateCount);
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCount();
+    });
+};
+
+let statsSection = document.querySelector('.stats-section');
+
+let observer = new IntersectionObserver(entries => {
+    if(entries[0].isIntersecting){
+        startCounting();
+        observer.disconnect();
+    }
+}, { threshold: 0.5 });
+
+observer.observe(statsSection);
+</script>
+<!-- BHOONIDHI CIRCULAR ECOSYSTEM -->
+<section class="bn-eco bn-eco-animated">
+    
+  <div class="bn-canvas">
+
+    <!-- CENTER LOGO -->
+    <div class="bn-center">
+      <img src="logo3.png" alt="BhooNidhi Logo">
+    </div>
+
+    <!-- ROTATING RINGS -->
+    <div class="bn-ring ring-1"></div>
+    <div class="bn-ring ring-2"></div>
+
+    <!-- ARROWS -->
+    <span class="bn-line l1"></span>
+    <span class="bn-line l2"></span>
+    <span class="bn-line l3"></span>
+    <span class="bn-line l4"></span>
+    <span class="bn-line l5"></span>
+    <span class="bn-line l6"></span>
+    <span class="bn-line l7"></span>
+    <span class="bn-line l8"></span>
+
+    <div class="bn-box b1">
+  <span class="bn-icon">🌾</span>
+  <div>Yield & Quality<br>Enhancement</div>
+</div>
+
+<div class="bn-box b2">
+  <span class="bn-icon">🔗</span>
+  <div>Supply Chain<br>Efficiency</div>
+</div>
+
+<div class="bn-box b3">
+  <span class="bn-icon">📜</span>
+  <div>Traceability &<br>Compliance</div>
+</div>
+
+<div class="bn-box b4">
+  <span class="bn-icon">🌦️</span>
+  <div>Climate-Smart<br>Farming</div>
+</div>
+
+<div class="bn-box b5">
+  <span class="bn-icon">🛡️</span>
+  <div>Farmer Risk<br>Protection</div>
+</div>
+
+<div class="bn-box b6">
+  <span class="bn-icon">📈</span>
+  <div>Market Linkage &<br>Expansion</div>
+</div>
+
+<div class="bn-box b7">
+  <span class="bn-icon">🏭</span>
+  <div>Resilient and<br>Sourcing</div>
+</div>
+
+<div class="bn-box b8">
+  <span class="bn-icon">💰</span>
+  <div>Cost & Price<br>Stability</div>
+</div>
+
+  </div>
+  <div class="bn-bg-animation">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+</section>
+
+<style>
+.bn-eco{
+  padding:120px 0;
+  background:#f8fbfa;
+  display:flex;
+  justify-content:center;
+  font-family:Segoe UI,Arial;
+}
+
+.bn-canvas{
+  position:relative;
+  width:420px;   /* reduced */
+  height:420px;  /* reduced */
+}
+
+/* CENTER LOGO */
+.bn-center{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 15px 40px rgba(0,0,0,.15);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:5;
+}
+.bn-center img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* RINGS */
+.bn-ring{
+  position:absolute;
+  top:50%;
+  left:50%;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+}
+.ring-1{
+  width:170px;
+  height:170px;
+  border:6px solid #22c55e;
+  animation: spinGreen 18s linear infinite;
+}
+
+@keyframes spinGreen{
+  from{
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+}
+.ring-2{
+  width:210px;
+  height:210px;
+  border:6px dashed #0ea5e9;
+  animation: spinBlue 20s linear infinite;
+}
+
+/* IMPORTANT: keep translate inside animation */
+@keyframes spinBlue{
+  from{
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+}
+
+@keyframes spinCW{
+  to{transform:translate(-50%,-50%) rotate(360deg)}
+}
+@keyframes spinCCW{
+  to{transform:translate(-50%,-50%) rotate(-360deg)}
+}
+
+/* ARROW BASE */
+.bn-line{
+  position:absolute;
+  top:50%;
+  left:50%;
+  border-top:2px dashed #9ca3af;
+  transform-origin:0 50%;
+}
+
+/* arrow head */
+.bn-line::after{
+  content:"";
+  position:absolute;
+  right:-6px;
+  top:-5px;
+  border-left:8px solid #9ca3af;
+  border-top:5px solid transparent;
+  border-bottom:5px solid transparent;
+}
+
+/* 🔥 PRECISE ANGLES + LENGTHS (MATCH IMAGE) */
+
+/* TOP */
+.l1{
+  width:180px;
+  transform:rotate(-90deg);
+}
+
+/* TOP-RIGHT */
+.l2{
+  width:215px;
+  transform:rotate(-28deg);
+}
+
+/* RIGHT */
+.l3{
+  width:225px;
+  transform:rotate(0deg);
+}
+
+/* BOTTOM-RIGHT */
+.l4{
+  width:215px;
+  transform:rotate(28deg);
+}
+
+/* BOTTOM */
+.l5{
+  width:180px;
+  transform:rotate(90deg);
+}
+
+/* BOTTOM-LEFT */
+.l6{
+  width:215px;
+  transform:rotate(152deg);
+}
+
+/* LEFT */
+.l7{
+  width:225px;
+  transform:rotate(180deg);
+}
+
+/* TOP-LEFT */
+.l8{
+  width:215px;
+  transform:rotate(-152deg);
+}
+
+
+/* 🔥 EXACT ANGLES TO BOX CENTERS */
+.l1{transform:rotate(-90deg)}     /* top */
+.l2{transform:rotate(-32deg)}     /* top-right */
+.l3{transform:rotate(0deg)}       /* right */
+.l4{transform:rotate(32deg)}      /* bottom-right */
+.l5{transform:rotate(90deg)}      /* bottom */
+.l6{transform:rotate(148deg)}     /* bottom-left */
+.l7{transform:rotate(180deg)}     /* left */
+.l8{transform:rotate(-148deg)}    /* top-left */
+
+/* BOXES */
+.bn-box{
+  position:absolute;
+  background:#fff;
+  padding:10px 14px;
+  border-radius:40px;
+  font-size:12px;
+  text-align:center;
+  white-space:nowrap;
+  transition:all .35s ease;
+  box-shadow:0 8px 22px rgba(0,0,0,.12);
+}
+
+/* NEON HOVER */
+.bn-box:hover{
+  transform:translateY(-5px) scale(1.03);
+  box-shadow:
+    0 0 12px rgba(34,197,94,.7),
+    0 0 25px rgba(14,165,233,.6),
+    0 10px 35px rgba(0,0,0,.25);
+  border:1px solid #22c55e;
+}
+
+/* BOX POSITIONS (MATCHED TO ANGLES) */
+/* BOX POSITIONS – CLOSER TO ARROWS */
+.b1{top:-10px;left:50%;transform:translateX(-50%)}
+.b2{top:75px;right:-40px}
+.b3{top:190px;right:-70px}
+.b4{bottom:75px;right:-55px}
+.b5{bottom:-10px;left:50%;transform:translateX(-50%)}
+.b6{bottom:75px;left:-55px}
+.b7{top:190px;left:-55px}
+.b8{top:75px;left:-40px}
+
+
+
+/* ================= MOBILE ROADMAP ================= */
+@media (max-width: 768px) {
+
+  .bn-eco {
+    padding: 60px 20px;
+  }
+
+  .bn-canvas {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* ✅ CENTER CHILDREN */
+    gap: 50px;
+  }
+
+  /* Hide desktop circular system */
+  .bn-ring,
+  .bn-line {
+    display: none !important;
+  }
+
+  /* Properly centered logo */
+  .bn-center {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 30px auto;
+  }
+
+  /* Reset ALL desktop absolute positioning */
+  .bn-box,
+  .b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8 {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+  }
+
+  /* Center vertical line */
+.bn-canvas::before {
+  content: "";
+  position: absolute;
+  top: 100px;          /* equal to logo height */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: calc(100% - 100px);
+  background: #22c55e;
+  z-index: 1;
+}
+  /* Roadmap cards */
+  .bn-box {
+    width: 75%;
+    max-width: 320px;
+    padding: 18px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    z-index: 2;
+  }
+
+  /* Alternate left-right */
+  .bn-box:nth-of-type(odd) {
+    align-self: flex-start;
+  }
+
+  .bn-box:nth-of-type(even) {
+    align-self: flex-end;
+  }
+
+}
+
+/* ================= IPHONE OPTIMIZATION ================= */
+
+/* iPhone SE, 12, 13, 14, 15 etc */
+@media (max-width: 430px) {
+
+  .bn-eco {
+    padding: 40px 15px;
+  }
+
+  .bn-canvas {
+    width: 100%;
+    gap: 40px;
+  }
+
+  /* Smaller center logo */
+  .bn-center {
+    width: 95px;
+    height: 95px;
+    margin-bottom: 25px;
+  }
+
+  /* Adjust vertical roadmap line */
+  .bn-canvas::before {
+    top: 95px;
+    height: calc(100% - 95px);
+    width: 2px;
+  }
+
+  /* Cards */
+  .bn-box {
+    width: 85%;
+    max-width: 260px;
+    padding: 14px;
+    font-size: 13px;
+    border-radius: 18px;
+  }
+
+  /* Remove alternate extreme shift (keep clean alignment) */
+  .bn-box:nth-of-type(odd),
+  .bn-box:nth-of-type(even) {
+    align-self: center;
+  }
+
+}
+
+/* =============================
+   BACKGROUND ANIMATION (SAFE)
+============================= */
+
+.bn-eco-animated{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(135deg,#f8fbfa,#eef4f1);
+}
+
+/* Floating blobs */
+.bn-eco-animated .bn-bg-animation span{
+  position:absolute;
+  border-radius:50%;
+  background:rgba(34,197,94,0.08);
+  animation:bnFloat 14s infinite ease-in-out;
+}
+
+.bn-eco-animated .bn-bg-animation span:nth-child(1){
+  width:300px;height:300px;
+  top:-80px;left:-80px;
+}
+
+.bn-eco-animated .bn-bg-animation span:nth-child(2){
+  width:200px;height:200px;
+  bottom:50px;right:120px;
+  animation-delay:4s;
+}
+
+.bn-eco-animated .bn-bg-animation span:nth-child(3){
+  width:150px;height:150px;
+  top:200px;right:-60px;
+  animation-delay:8s;
+}
+
+@keyframes bnFloat{
+  0%,100%{transform:translateY(0px)}
+  50%{transform:translateY(-40px)}
+}
+
+/* Subtle grid overlay */
+.bn-eco-animated::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size:40px 40px;
+  animation:gridMove 20s linear infinite;
+  pointer-events:none;
+}
+
+@keyframes gridMove{
+  from{background-position:0 0, 0 0}
+  to{background-position:40px 40px, 40px 40px}
+}
+
+/* Ensure ecosystem stays above animation */
+.bn-eco-animated .bn-canvas{
+  position:relative;
+  z-index:2;
+}
+
+</style>
+
+<!-- ===== PRODUCTS SECTION (FIXED OVERLAP) ===== -->
+<section class="bn-products">
+  <div class="bn-products-wrapper">
+
+    <!-- LEFT SIDE IMAGES -->
+    <div class="bn-products-images fade-left">
+  <div class="bn-tilt-wrapper">
+    <img src="franchise1.jpeg" class="bn-img-main" alt="">
+    <img src="franchise5.jpeg" class="bn-img-overlap" alt="">
+  </div>
+</div>
+
+    <!-- RIGHT SIDE CONTENT -->
+    <div class="bn-products-content fade-right">
+      <span class="bn-badge fade-up">Our Products</span>
+      <h2 class="fade-up">Modern Agricultural Solutions for Every Farmer</h2>
+
+      <p class="fade-up">
+        BhooNidhi provides high-performance agricultural machinery,
+        irrigation systems, crop-care products and essential farm tools.
+      </p>
+
+      <div class="bn-products-features fade-up">
+        <div>🚜 Power Tillers & Mini Tractors</div>
+        <div>🌱 Seeds & Crop Protection</div>
+        <div>💧 Irrigation Systems</div>
+        <div>🔧 Spare Parts & Tools</div>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const elements = document.querySelectorAll(".bn-products .fade-up, .bn-products .fade-left, .bn-products .fade-right");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add("show");
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  elements.forEach(el => observer.observe(el));
+
+});
+</script>
+
+<script>
+/* ===== FLOATING PARALLAX ===== */
+
+window.addEventListener("scroll", function(){
+
+  const section = document.querySelector(".bn-products");
+  if(!section) return;
+
+  const rect = section.getBoundingClientRect();
+  const scrollProgress = window.innerHeight - rect.top;
+
+  const mainImg = document.querySelector(".bn-img-main");
+  const overlapImg = document.querySelector(".bn-img-overlap");
+
+  if(scrollProgress > 0){
+
+    const moveY = scrollProgress * 0.03;
+    const rotate = scrollProgress * 0.01;
+
+    mainImg.style.transform = `translateY(${moveY}px)`;
+    overlapImg.style.transform = `translateY(${moveY * 1.2}px) rotate(-8deg)`;
+
+  }
+
+});
+</script>
+
+<script>
+/* ===== APPLE STYLE SMOOTH FADE REVEAL ===== */
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  const elements = document.querySelectorAll(".bn-products .fade-up, .bn-products .fade-left, .bn-products .fade-right");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.style.transitionDelay = "0.15s";
+        entry.target.classList.add("show");
+      }
+    });
+  }, {
+    threshold: 0.15,
+    rootMargin: "0px 0px -80px 0px"
+  });
+
+  elements.forEach(el => observer.observe(el));
+
+});
+</script>
+
+<script>
+/* ===== PREMIUM MOUSE 3D TILT ===== */
+
+const container = document.querySelector(".bn-products-images");
+const tilt = document.querySelector(".bn-tilt-wrapper");
+
+if(container && tilt){
+
+  // Disable on mobile
+  if(window.innerWidth > 900){
+
+    container.addEventListener("mousemove", (e) => {
+
+      const rect = container.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const rotateX = ((y - centerY) / centerY) * 8;
+      const rotateY = ((x - centerX) / centerX) * 8;
+
+      tilt.style.transform = `
+        rotateX(${-rotateX}deg)
+        rotateY(${rotateY}deg)
+      `;
+    });
+
+    container.addEventListener("mouseleave", () => {
+      tilt.style.transform = "rotateX(0deg) rotateY(0deg)";
+    });
+
+  }
+}
+</script>
+
+<!-- ===== PREMIUM PRO CONTACT ===== -->
+<section class="bn-contact">
+
+  <div class="bn-contact-bg">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="bn-contact-wrapper">
+
+    <!-- LEFT -->
+    <div class="bn-contact-info fade-left">
+      <span class="bn-contact-badge">Contact Us</span>
+      <h2>Let’s Build Something Great 🌱</h2>
+      <p>
+        Reach out for products, services or franchise opportunities.
+        Our team will respond quickly.
+      </p>
+
+      <div class="bn-contact-details">
+        <div>📍 Hassan, Karnataka</div>
+        <div>📞 +91 89512 01568</div>
+        <div>✉ support@bhoonidhi.com</div>
+      </div>
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="bn-contact-form fade-right">
+      <form onsubmit="sendContactWhatsApp(event)">
+
+        <div class="bn-input">
+          <input type="text" id="cname" required>
+          <label>Your Name</label>
+        </div>
+
+        <div class="bn-input">
+          <input type="email" id="cemail" required>
+          <label>Your Email</label>
+        </div>
+
+        <div class="bn-input">
+          <input type="tel" id="cphone">
+          <label>Phone Number</label>
+        </div>
+
+        <div class="bn-input">
+          <textarea id="cmessage" rows="3" required></textarea>
+          <label>Your Message</label>
+        </div>
+
+        <button type="submit">Send Message</button>
+
+        <div class="bn-success">Message Sent Successfully ✅</div>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const elements = document.querySelectorAll(".bn-contact .fade-left, .bn-contact .fade-right");
+
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add("show");
+      }
+    });
+  }, {threshold:0.2});
+
+  elements.forEach(el=>observer.observe(el));
+
+});
+</script>
+
+<script>
+function sendContactWhatsApp(e){
+  e.preventDefault();
+
+  const name = document.getElementById("cname").value;
+  const email = document.getElementById("cemail").value;
+  const phone = document.getElementById("cphone").value;
+  const message = document.getElementById("cmessage").value;
+
+  const text =
+  "🌱 *New Contact Inquiry* %0A%0A" +
+  "👤 Name: " + name + "%0A" +
+  "📧 Email: " + email + "%0A" +
+  "📞 Phone: " + phone + "%0A%0A" +
+  "📝 Message: " + message;
+
+  document.querySelector(".bn-success").style.display="block";
+
+  setTimeout(()=>{
+    window.open("https://wa.me/918951201568?text=" + text, "_blank");
+  }, 1000);
+}
+</script>
+
+<!-- ===== BhooNidhi Cropin-Style Final Section START ===== -->
+<section class="bhoonidhi-footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h1 class="footer-logo">BhooNidhi</h1>
+      <div class="footer-cert">
+        <p>
+          This organization supports sustainable agriculture
+          and responsible digital transformation.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Industry</h3>
+      <ul>
+        <li>Food & Agri Retail</li>
+        <li>FPOs & Cooperatives</li>
+        <li>Seed & Input Providers</li>
+        <li>Government & NGOs</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Solutions</h3>
+      <ul>
+        <li>Digital Farming</li>
+        <li>AI-Driven Agriculture</li>
+        <li>Supply Chain Intelligence</li>
+        <li>Sustainable Practices</li>
+        <li>Compliance & Traceability</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bg-text">BhooNidhi</div>
+
+  <div class="footer-bottom">
+    <div class="social-icons">
+      <span>f</span>
+      <span>x</span>
+      <span>in</span>
+      <span>▶</span>
+    </div>
+    <p>© 2026 BhooNidhi Agritech & Empowerment Solutions</p>
+  </div>
+</section>
+<!-- ===== BhooNidhi Cropin-Style Final Section END ===== -->
+
+<style>/* ===== PREMIUM FOOTER ===== */
+
+.bhoonidhi-footer{
+  position:relative;
+  background:rgb(63, 136, 63);
+  color:#fff;
+  padding:100px 8% 40px;
+  overflow:hidden;
+}
+
+.footer-container{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:50px;
+  position:relative;
+  z-index:2;
+}
+
+.footer-logo{
+  font-size:36px;
+  margin-bottom:20px;
+}
+
+.footer-cert{
+  display:flex;
+  gap:15px;
+  align-items:flex-start;
+}
+
+.footer-col h3{
+  margin-bottom:15px;
+}
+
+.footer-col ul{
+  list-style:none;
+  padding:0;
+}
+
+.footer-col ul li{
+  margin-bottom:10px;
+  opacity:0.8;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.footer-col ul li:hover{
+  opacity:1;
+  transform:translateX(5px);
+}
+
+.footer-bg-text{
+  position:absolute;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:140px;
+  font-family:'Belleza', sans-serif;   /* ✅ Belleza font */
+  font-weight:400;
+  opacity:0.06;
+  white-space:nowrap;
+  pointer-events:none;
+}
+
+.footer-bottom{
+  margin-top:60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-top:1px solid rgba(255,255,255,0.1);
+  padding-top:20px;
+  font-size:14px;
+}
+
+.social-icons span{
+  margin-right:15px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.social-icons span:hover{
+  color:#000000;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+  .footer-container{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:600px){
+  .footer-container{
+    grid-template-columns:1fr;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+  }
+
+  .footer-bg-text{
+    font-size:60px;
+  }
+}
+
+</style>
+
+<script>
+const floatSlides = document.querySelectorAll(".float-slide");
+let floatIndex = 0;
+
+function showFloatSlide(i){
+  floatSlides.forEach(slide=>{
+    slide.classList.remove("active","exit");
+  });
+
+  floatSlides[i].classList.add("active");
+
+  setTimeout(()=>{
+    floatSlides[i].classList.add("exit");
+  },2500); // stays 2.5s then exits
+}
+
+function nextFloat(){
+  showFloatSlide(floatIndex);
+  floatIndex++;
+  if(floatIndex >= floatSlides.length){
+    floatIndex = 0;
+  }
+}
+
+showFloatSlide(floatIndex);
+setInterval(nextFloat,3000);
+</script>
+</body>
+</html>

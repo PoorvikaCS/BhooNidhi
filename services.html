@@ -1,0 +1,286 @@
+<head>
+   ...
+   <style>
+    body{
+    background:
+        linear-gradient(135deg,#f0f9ff,#e0f2fe);
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size:40px 40px;
+    z-index:0;
+}
+
+    /* ==========================
+   BOOK SERVICE & SUPPORT
+========================== */
+
+.service-advanced{
+    padding:80px 20px;
+    background:#f4f7f5;
+}
+
+.service-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.service-header h2{
+    font-size:38px;
+}
+
+.service-layout{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* LEFT SIDE */
+.service-left{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.service-form-box{
+    background:#ffffff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.service-form input,
+.service-form select,
+.service-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #ddd;
+    font-family:inherit;
+}
+
+.service-form textarea{
+    min-height:90px;
+}
+
+/* RIGHT SIDE */
+.service-process{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.process-step{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(0,0,0,0.06);
+    transition:0.3s;
+}
+
+.process-step:hover{
+    transform:translateY(-5px);
+}
+
+.icon{
+    font-size:30px;
+    margin-bottom:10px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-6px);}
+}
+
+/* ==========================
+   PREMIUM BUTTONS
+========================== */
+
+.service-buttons{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:15px 25px;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    transition:all 0.4s ease;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Book Service */
+.btn-book{
+    background:linear-gradient(135deg,#2f6f4e,#3fa96d);
+    box-shadow:0 10px 25px rgba(47,111,78,0.4);
+}
+
+/* Call Back */
+.btn-callback{
+    background:linear-gradient(135deg,#f59e0b,#ffb703);
+    box-shadow:0 10px 25px rgba(245,158,11,0.4);
+}
+
+/* WhatsApp */
+.btn-whatsapp{
+    background:linear-gradient(135deg,#25D366,#1ebe5d);
+    box-shadow:0 10px 25px rgba(37,211,102,0.4);
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+    .service-layout{
+        flex-direction:column;
+    }
+
+    .service-left,
+    .service-process{
+        width:100%;
+    }
+
+    .service-process{
+        margin-top:40px;
+    }
+}
+   </style>
+</head><section id="service-full" class="service-advanced">
+
+    <div class="service-header">
+        <h2>Book Service & Support</h2>
+        <p>Fast, reliable and professional agricultural equipment service support.</p>
+    </div>
+
+    <div class="service-layout">
+
+        <!-- LEFT SIDE -->
+        <div class="service-left">
+
+            <div class="service-form-box">
+                <form class="service-form">
+
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="tel" id="mobile" placeholder="Mobile Number" required>
+                    <input type="text" id="location" placeholder="Location / Village" required>
+
+                    <select id="service" required>
+                        <option value="">Select Service Type</option>
+                        <option>Power Tool Repair</option>
+                        <option>Maintenance Service</option>
+                        <option>Spare Parts</option>
+                        <option>Technical Assistance</option>
+                    </select>
+
+                    <textarea id="issue" placeholder="Describe your issue"></textarea>
+
+                    <div class="service-buttons">
+                        <button type="button" onclick="sendToWhatsApp()" class="btn btn-book">
+                            🚜 Book Service
+                        </button>
+
+                        <a href="https://wa.me/918951201568" target="_blank" class="btn btn-callback">
+                            📞 Request a Call Back
+                        </a>
+
+                        <a href="https://wa.me/918951201568" target="_blank" class="btn btn-whatsapp">
+                            💬 Chat on WhatsApp
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="service-process">
+
+            <div class="process-step">
+                <div class="icon">📞</div>
+                <h4>1. Request Received</h4>
+                <p>Our team receives your service request instantly.</p>
+            </div>
+
+            <div class="process-step">
+                <div class="icon">🔧</div>
+                <h4>2. Technician Assigned</h4>
+                <p>Certified technician assigned within 24 hours.</p>
+            </div>
+
+            <div class="process-step">
+                <div class="icon">🚜</div>
+                <h4>3. On-Site Service</h4>
+                <p>Field visit and professional repair or inspection.</p>
+            </div>
+
+            <div class="process-step">
+                <div class="icon">✅</div>
+                <h4>4. Issue Resolved</h4>
+                <p>Equipment tested and service completed with support.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+function sendToWhatsApp(){
+
+    var name = document.getElementById("name").value.trim();
+    var mobile = document.getElementById("mobile").value.trim();
+    var location = document.getElementById("location").value.trim();
+    var service = document.getElementById("service").value.trim();
+    var issue = document.getElementById("issue").value.trim();
+
+    if(name === "" || mobile === "" || location === "" || service === ""){
+        alert("Please fill all required fields.");
+        return;
+    }
+
+    var message =
+    "🚜 *BhooNidhi Service Booking* \n\n" +
+    "👤 Name: " + name + "\n" +
+    "📞 Mobile: " + mobile + "\n" +
+    "📍 Location: " + location + "\n" +
+    "🛠 Service Type: " + service + "\n" +
+    "📝 Issue: " + issue;
+
+    var url = "https://wa.me/918951201568?text=" + encodeURIComponent(message);
+
+    window.open(url, "_blank");
+}
+</script>
