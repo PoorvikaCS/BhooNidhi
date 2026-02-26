@@ -1,5 +1,4 @@
 <head>
-   ...
    <style>
     body{
     background:
@@ -15,8 +14,12 @@ body::before{
         linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
     background-size:40px 40px;
     z-index:0;
+    pointer-events:none;   /* 🔥 THIS FIXES THE TYPING ISSUE */
 }
-
+.service-advanced{
+    position:relative;
+    z-index:2;
+}
     /* ==========================
    BOOK SERVICE & SUPPORT
 ========================== */
