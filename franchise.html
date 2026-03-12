@@ -165,6 +165,8 @@ body{
   transition:transform .2s ease;
   transform-style:preserve-3d;
 }
+/* ========= ROADMAP ========= */
+/* ================= ROADMAP ================= */
 .franchise-roadmap{
   padding:120px 8%;
   text-align:center;
@@ -173,36 +175,54 @@ body{
 .roadmap-line{
   display:flex;
   justify-content:space-between;
+  align-items:center;
   margin-top:80px;
   position:relative;
+  gap:20px;
 }
 
+/* center line */
 .roadmap-line::before{
   content:"";
   position:absolute;
-  top:50%;
+  top:35px;
   left:0;
   width:100%;
   height:4px;
   background:#2f6f4e;
-  z-index:-1;
+  z-index:0;
 }
 
+/* step cards */
 .road-step{
   background:#fff;
   padding:30px;
   border-radius:20px;
-  width:22%;
+  width:100%;
+  max-width:220px;
   box-shadow:0 10px 30px rgba(0,0,0,.08);
+  position:relative;
+  z-index:2;
   animation:floatStep 4s ease-in-out infinite;
 }
 
-@keyframes floatStep{
-  0%,100%{transform:translateY(0);}
-  50%{transform:translateY(-15px);}
+/* step number */
+.road-step span{
+  display:block;
+  font-size:14px;
+  color:#888;
+  margin-bottom:5px;
 }
 
+/* floating animation */
+@keyframes floatStep{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(-12px);}
+}
+
+/* mobile */
 @media(max-width:900px){
+
   .roadmap-line{
     flex-direction:column;
     gap:40px;
@@ -213,10 +233,9 @@ body{
   }
 
   .road-step{
-    width:100%;
+    max-width:100%;
   }
 }
-
 .franchise-hero h1,
 .franchise-hero p{
   color:#ffffff;
