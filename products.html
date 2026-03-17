@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products</title>
+
+<div class="products-header">
+
+  <h1>Our Products</h1>
+
+  <p>Explore our complete agricultural equipment catalogue</p>
+
+  <a href="catalogue.pdf" target="_blank" class="catalog-btn">
+    📄 View Full Catalogue 
+  </a>
+
+</div>
+<style>
+/*header title*/
+.products-header{
+  display:flex;
+  flex-direction:column;   /* 🔥 STACK VERTICALLY */
+  align-items:center;      /* 🔥 CENTER EVERYTHING */
+  justify-content:center;
+  text-align:center;
+  margin:20px;      /* 🔥 REDUCE GAP TOP & BOTTOM */
+}
+
+.products-header h1{
+  font-size:40px;
+  color:#2f6f4e;
+  margin-bottom:8px;       /* 🔥 SMALL GAP */
+}
+
+.products-header p{
+  font-size:18px;
+  color:#444;
+  margin-bottom:15px;      /* 🔥 CONTROL SPACE */
+}
+
+/* BUTTON */
+.catalog-btn{
+  display:inline-block;
+  padding:10px 24px;
+  border:2px solid #2f6f4e;
+  color:#2f6f4e;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.catalog-btn:hover{
+  background:#2f6f4e;
+  color:#fff;
+}
+
+/* BUTTON */
+.catalog-btn{
+  display:inline-block;
+  padding:12px 28px;
+  border:2px solid #2f6f4e;
+  color:#2f6f4e;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.catalog-btn:hover{
+  background:#2f6f4e;
+  color:#fff;
+}
+/* ===== LOADING SCREEN ===== */
+#loader{
+  position:fixed;
+  width:100%;
+  height:100vh;
+  background:#ffffff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+
+.loader-circle{
+  width:60px;
+  height:60px;
+  border:6px solid #e0e0e0;
+  border-top:6px solid #1f7a3f;
+  border-radius:50%;
+  animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+  to{transform:rotate(360deg);}
+}
+
+/* ===== PAGE ===== */
+
+body{
+  margin:0;
+  font-family:Segoe UI,Arial;
+  background:#f4f6f5;
+  display:none; /* hide until loaded */
+}
+
+/* Top Bar */
+.products-top{
+  display:flex;
+  align-items:center;
+  padding:20px 30px;
+  background:#ffffff;
+  box-shadow:0 4px 20px rgba(0,0,0,0.05);
+}
+
+.toggle-btn{
+  width:45px;
+  height:45px;
+  background:#1f7a3f;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:8px;
+  font-size:22px;
+  cursor:pointer;
+  margin-right:15px;
+}
+
+.products-top h2{
+  margin:0;
+  font-weight:600;
+}
+
+
+/* Products Grid */
+.products-container{
+  padding:40px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.product-card{
+  background:#fff;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 15px 30px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.product-card:hover{
+  transform:translateY(-5px);
+}
+
+.product-card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.product-card h4{
+  margin:0;
+  padding:15px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .products-container{
+    padding:20px;
+  }
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+}
+
+.products-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap:25px;
+    padding:30px;
+}
+
+.product-card{
+    background:#fff;
+    border:1px solid #e5e5e5;
+    position:relative;
+    text-align:center;
+    transition:0.3s;
+}
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    padding:20px;
+}
+
+.product-info{
+    padding:15px;
+    border-top:1px solid #e5e5e5;
+}
+
+.product-info h4{
+    font-size:16px;
+    margin:10px 0;
+}
+
+.product-info p{
+    margin:5px 0;
+    font-size:14px;
+}
+
+.price{
+    font-weight:bold;
+    font-size:18px;
+    margin-top:10px;
+}
+
+.buy-btn{
+    display:block;
+    background:#5aa100;
+    color:#fff;
+    padding:12px;
+    margin:15px auto 20px;
+    width:80%;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* NEW Ribbon */
+.ribbon{
+    position:absolute;
+    top:10px;
+    left:0;
+    background:red;
+    color:white;
+    padding:5px 12px;
+    font-size:12px;
+}
+
+/* Mobile */
+@media(max-width:600px){
+    .products-grid{
+        grid-template-columns:repeat(2,1fr);
+        padding:15px;
+        gap:15px;
+    }
+
+    .product-card img{
+        height:160px;
+    }
+
+    .product-info h4{
+        font-size:13px;
+    }
+
+    .price{
+        font-size:15px;
+    }
+
+    .buy-btn{
+        padding:8px;
+        font-size:13px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div id="header"></div>
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-circle"></div>
+</div>
+<style>
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+</style>
+<style>
+  .products-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu-btn {
+    background: #2e6f4e;
+    color: white;
+    font-size: 22px;
+    border: none;
+    padding: 15px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.products-menu {
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    display: none;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.products-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.products-menu ul li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.products-menu ul li:hover {
+    background: #f3f3f3;
+}
+</style>
+<style>
+/* HEADER */
+.products-header{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  padding:40px 8%;
+}
+
+/* MENU BUTTON */
+.menu-btn{
+  background:#2f6f4e;
+  color:#fff;
+  border:none;
+  padding:15px 20px;
+  font-size:22px;
+  border-radius:12px;
+  cursor:pointer;
+}
+/* DROPDOWN CONTAINER */
+.products-menu{
+    position:absolute;
+    top:110px;
+    left:8%;
+    width:320px;
+    background:#ffffff;
+    border-radius:16px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    padding:10px 0;
+    display:none;
+    z-index:1000;
+}
+
+/* LINKS */
+.products-menu a{
+    display:block;
+    padding:14px 20px;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
+    color:#333;
+    transition:all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.products-menu a:hover{
+    background:#f3f8f5;
+    color:#2f6f4e;
+    padding-left:28px;
+}
+
+/* ACTIVE BUTTON */
+.menu-btn{
+    background:#2f6f4e;
+    color:#fff;
+    border:none;
+    padding:14px 18px;
+    font-size:20px;
+    border-radius:12px;
+    cursor:pointer;
+}
+</style>
+<!-- PRODUCTS -->
+<div class="products-container">
+
+  <a href="category.html?product=Battery Sprayer" class="product-card">
+    <img src="bs1.jpeg">
+    <h4>Battery Sprayer</h4>
+  </a>
+
+  <a href="category.html?product=Knapsack Power Sprayer" class="product-card">
+    <img src="k3.jpeg">
+    <h4>Knapsack Power Sprayer</h4>
+  </a>
+
+  <a href="category.html?product=HTP Pump" class="product-card">
+    <img src="h1.jpeg">
+    <h4>HTP Pump</h4>
+  </a>
+
+  <a href="category.html?product=Brush Cutter" class="product-card">
+    <img src="br1.jpeg">
+    <h4>Brush Cutter</h4>
+  </a>
+
+  <a href="category.html?product=Inter-cultivator" class="product-card">
+    <img src="i1.jpeg">
+    <h4>Inter-cultivator</h4>
+  </a>
+
+  <a href="category.html?product=Water Pump" class="product-card">
+    <img src="w1.jpeg">
+    <h4>Water Pump</h4>
+  </a>
+
+  <a href="category.html?product=Lawn Mower" class="product-card">
+    <img src="l1.jpeg">
+    <h4>Lawn Mower</h4>
+  </a>
+
+  <a href="category.html?product=Tea Pruner/Fogger" class="product-card">
+    <img src="tp1.jpeg">
+    <h4>Tea Pruner/Fogger</h4>
+  </a>
+
+</div>
+
+
+</div>
+
+<script>
+
+/* ===== LOADER ===== */
+window.addEventListener("load", function(){
+  document.getElementById("loader").style.display="none";
+  document.body.style.display="block";
+});
+
+/* ===== MENU ===== */
+function toggleMenu(){
+  document.getElementById("sidebar").classList.toggle("active");
+}
+
+/* ===== FILTER ===== */
+function filterProducts(category){
+  const products = document.querySelectorAll(".product-card");
+  products.forEach(product=>{
+    product.style.display =
+      product.dataset.category === category ? "block" : "none";
+  });
+  toggleMenu();
+}
+
+function showAll(){
+  const products = document.querySelectorAll(".product-card");
+  products.forEach(product=>{
+    product.style.display="block";
+  });
+  toggleMenu();
+}
+
+</script>
+<script>
+function openSidebar(){
+  document.getElementById("sidebar").classList.add("active");
+  document.getElementById("overlay").classList.add("active");
+}
+
+function closeSidebar(){
+  document.getElementById("sidebar").classList.remove("active");
+  document.getElementById("overlay").classList.remove("active");
+}
+
+function filterProducts(category){
+  const products = document.querySelectorAll(".product-card");
+
+  products.forEach(card=>{
+    if(category === "all"){
+      card.style.display = "block";
+    } else {
+      card.style.display =
+        card.classList.contains(category) ? "block" : "none";
+    }
+  });
+
+  closeSidebar();
+}
+</script>
+<script>
+function toggleProductsMenu() {
+    const menu = document.getElementById("productsMenu");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+
+function showCategory(category) {
+    console.log("Selected:", category);
+    document.getElementById("productsMenu").style.display = "none";
+}
+</script>
+<script>
+function toggleProductsMenu(){
+    const menu = document.getElementById("productsMenu");
+    menu.style.display =
+        menu.style.display === "block" ? "none" : "block";
+}
+
+document.addEventListener("click", function(e){
+    const menu = document.getElementById("productsMenu");
+    const btn = document.querySelector(".menu-btn");
+
+    if(!menu.contains(e.target) && !btn.contains(e.target)){
+        menu.style.display = "none";
+    }
+});
+</script>
+<script src="header.js"></script>
+</body>
+</html>
